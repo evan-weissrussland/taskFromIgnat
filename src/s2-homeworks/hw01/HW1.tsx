@@ -34,7 +34,7 @@ export const message0: MessageType = {
         name: 'Ivan',  // можно менять
     },
     message: {
-        text: "Hello, she didn't do anything and rested all day, how a you?", // можно менять
+        text: "Псссс, гайс. Каммон прокидывать пропсы", // можно менять
         time: '09:01', // можно менять
     },
 }
@@ -45,7 +45,7 @@ export const friendMessage0: MessageType = {
         name: 'Mr.Jhon Week', // можно менять
     },
     message: {
-        text: 'Псссс, гайс. Каммон прокидывать пропсы', // можно менять
+        text: 'Не не не, ты что! Сначала домашку от Игната!!', // можно менять
         time: '22:00', // можно менять
     },
 }
