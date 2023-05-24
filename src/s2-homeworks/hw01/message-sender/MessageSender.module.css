@@ -12,6 +12,10 @@ display: flex;
     border: none;
     box-shadow: 0 2px rgba(221, 0, 255, 0.58);
     min-height: 29px;
+    overflow: hidden;
+    resize:none;
+    outline: none;
+
 }
 
 .button {
