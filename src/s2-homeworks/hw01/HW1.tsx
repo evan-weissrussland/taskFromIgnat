@@ -6,25 +6,35 @@ import FriendMessage from './friend-message/FriendMessage'
 import avatar from './avatar.png'
 
 /*
-* 1 - описать тип MessageType
-* 2 - описать тип MessagePropsType в файле Message.tsx
+* 1 - описать тип MessageType                              //выполенено
+* 2 - описать тип MessagePropsType в файле Message.tsx      //выполенено
 * 3 - в файле Message.tsx отобразить приходящие данные
 * 4 - выполнить пункты 2, 3 в файле FriendMessage.tsx
 * 5 - сделать стили в соответствии с дизайном
 * */
 
 // нужно создать правильный тип вместо any
-export type MessageType = any
+export type MessageType = {
+    id: number
+    user: {
+        avatar: string
+        name: string
+    }
+    message: {
+        text: string
+        time: string
+    }
+}
 
 // структуру объекта не менять
 export const message0: MessageType = {
     id: 0,
     user: {
         avatar: avatar, // можно менять
-        name: 'Some Name',  // можно менять
+        name: 'Ivan',  // можно менять
     },
     message: {
-        text: 'some textsome textsome textsome textsome textsome textsome text', // можно менять
+        text: " Hello, she didn't do anything and rested all day, how a you?", // можно менять
         time: '22:00', // можно менять
     },
 }
@@ -43,12 +53,12 @@ export const friendMessage0: MessageType = {
 const HW1 = () => {
     return (
         <div id={'hw1'}>
-            <div className={s2.hwTitle}>Homework #1</div>
-            <div className={s2.hw}>
+            <div className={s2.hwTitle}>Homework #1</div>        {/*s2.hwTitle - это класс .hwTitle из App.module.css*/}
+            <div className={s2.hw}>          {/*s2.hw - это класс .hw из App.module.css*/}
                 {/*проверка отображения (не менять)*/}
                 <div>
-                    <Message message={message0} />
-                    <FriendMessage message={friendMessage0} />
+                    <Message message={message0} />    {/*это компонента с атрибутом message, в качестве значения используется переменная*/}
+                    <FriendMessage message={friendMessage0} /> {/*это компонента с атрибутом message, в качестве значения используется переменная*/}
                 </div>
 
                 {/*для автоматической проверки дз (не менять)*/}
