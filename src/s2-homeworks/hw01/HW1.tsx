@@ -34,15 +34,15 @@ export const message0: MessageType = {
         name: 'Ivan',  // можно менять
     },
     message: {
-        text: " Hello, she didn't do anything and rested all day, how a you?", // можно менять
-        time: '22:00', // можно менять
+        text: "Hello, she didn't do anything and rested all day, how a you?", // можно менять
+        time: '09:01', // можно менять
     },
 }
 export const friendMessage0: MessageType = {
     id: 100,
     user: {
         avatar: avatar, // можно менять
-        name: 'Friend Name', // можно менять
+        name: 'Mr.Jhon Week', // можно менять
     },
     message: {
         text: 'зеркальное сообщение для тренировки css', // можно менять
@@ -53,12 +53,12 @@ export const friendMessage0: MessageType = {
 const HW1 = () => {
     return (
         <div id={'hw1'}>
-            <div className={s2.hwTitle}>Homework #1</div>        {/*s2.hwTitle - это класс .hwTitle из App.module.css*/}
-            <div className={s2.hw}>          {/*s2.hw - это класс .hw из App.module.css*/}
+            <div className={s2.hwTitle}>Homework #1</div>
+            <div className={s2.hw}>
                 {/*проверка отображения (не менять)*/}
                 <div>
-                    <Message message={message0} />    {/*это компонента с атрибутом message, в качестве значения используется переменная*/}
-                    <FriendMessage message={friendMessage0} /> {/*это компонента с атрибутом message, в качестве значения используется переменная*/}
+                    <Message message={message0} />
+                    <FriendMessage message={friendMessage0} />
                 </div>
 
                 {/*для автоматической проверки дз (не менять)*/}
