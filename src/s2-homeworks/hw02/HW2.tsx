@@ -5,7 +5,7 @@ import s2 from '../../s1-main/App.module.css'
 /*
 * 1 - описать типы AffairPriorityType, AffairType            ВЫПОЛНЕНО
 * 2 - указать нужный тип для defaultAffairs                  ВЫПОЛНЕНО
-* 3 - дописать типы и логику функции filterAffairs и проверить её тестами
+* 3 - дописать типы и логику функции filterAffairs и проверить её тестами  ВЫПОЛНЕНО
 * 4 - выполнить пункт 3 для функции deleteAffair
 * 5 - указать нужный тип в useState с affairs
 * 6 - дописать тип и логику функции deleteAffairCallback
@@ -36,9 +36,12 @@ const defaultAffairs: Array<AffairType> = [ // need to fix any              ВЫ
 
 // pure helper functions
 export const filterAffairs = (affairs: Array<AffairType>, filter: FilterType): any => { // need to fix any
-
-
-    return affairs // need to fix
+                                                                    // НЕПОНЯТНО, как ТИПИЗИРОВАТЬ any
+    if (filter === "all") {
+        return affairs
+    } else {
+        return affairs.filter(item => item.priority === filter)
+    } // need to fix                                                 ВЫПОЛНЕНО
 }
 export const deleteAffair = (affairs: any, _id: any): any => { // need to fix any
 
@@ -46,7 +49,7 @@ export const deleteAffair = (affairs: any, _id: any): any => { // need to fix an
 }
 
 function HW2() {
-    const [affairs, setAffairs] = useState<AffairType[]>(defaultAffairs) // need to fix any
+    const [affairs, setAffairs] = useState<AffairType[]>(defaultAffairs) // need to fix any    ВЫПОЛНЕНО
     const [filter, setFilter] = useState<FilterType>('all')
 
     const filteredAffairs = filterAffairs(affairs, filter)
