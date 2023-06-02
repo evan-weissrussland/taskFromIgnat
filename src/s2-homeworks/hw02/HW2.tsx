@@ -55,6 +55,9 @@ function HW2() {
     const filteredAffairs = filterAffairs(affairs, filter)     // отфильтрованный defaultAffairs
     const deleteAffairCallback = (_id: number) => { // need to fix any  ВЫПОЛНЕНО
         // need to fix
+        let result = deleteAffair(filteredAffairs, _id );
+        setAffairs(result)
+
     }
 
     return (

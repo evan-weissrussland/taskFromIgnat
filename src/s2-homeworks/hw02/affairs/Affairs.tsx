@@ -6,13 +6,14 @@ import s from './Affairs.module.css'
 type AffairsPropsType = {
     data: AffairType[] // need to fix any
     setFilter: (value:FilterType) => void  // need to fix any
-    deleteAffairCallback: any   // need to fix any
+    deleteAffairCallback: (_id: number) => void   // need to fix any
     filter: FilterType
 }
 
 function Affairs(props: AffairsPropsType) {
     const setAll = () => {
-        // need to fix
+        // need to fixe
+        props.setFilter('all')
     }
     const setHigh = () => {
         props.setFilter('high')
