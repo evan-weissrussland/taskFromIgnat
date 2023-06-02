@@ -6,8 +6,8 @@ import s2 from '../../s1-main/App.module.css'
 * 1 - описать типы AffairPriorityType, AffairType            ВЫПОЛНЕНО
 * 2 - указать нужный тип для defaultAffairs                  ВЫПОЛНЕНО
 * 3 - дописать типы и логику функции filterAffairs и проверить её тестами  ВЫПОЛНЕНО
-* 4 - выполнить пункт 3 для функции deleteAffair
-* 5 - указать нужный тип в useState с affairs
+* 4 - выполнить пункт 3 для функции deleteAffair ВЫПОЛНЕНО
+* 5 - указать нужный тип в useState с affairs  ВЫПОЛНЕНО
 * 6 - дописать тип и логику функции deleteAffairCallback
 * 7 - в файле Affairs.tsx дописать типизацию пропсов
 * 8 - в файле Affairs.tsx дописать логику функций setAll, setHigh, setMiddle, setLow
@@ -17,10 +17,10 @@ import s2 from '../../s1-main/App.module.css'
 * */
 
 // types
-export type AffairPriorityType = string // need to fix any
+export type AffairPriorityType = string // need to fix any ВЫПОЛНЕНО
 export type AffairType = {
-    _id: number // need to fix any
-    name: string // need to fix any
+    _id: number // need to fix any ВЫПОЛНЕНО
+    name: string // need to fix any ВЫПОЛНЕНО
     priority: AffairPriorityType
 }
 export type FilterType = 'all' | AffairPriorityType
@@ -45,7 +45,7 @@ export const filterAffairs = (affairs: AffairType[], filter: FilterType): any =>
 }
 export const deleteAffair = (affairs: AffairType[], _id: number): any => { // need to fix any
                                                           // НЕПОНЯТНО, как ТИПИЗИРОВАТЬ any
-    return affairs.filter(item => item._id !== _id)   // need to fix
+    return affairs.filter(item => item._id !== _id)   // need to fix  ВЫПОЛНЕНО
 }
 
 function HW2() {
@@ -53,7 +53,7 @@ function HW2() {
     const [filter, setFilter] = useState<FilterType>('all')
 
     const filteredAffairs = filterAffairs(affairs, filter)     // отфильтрованный defaultAffairs
-    const deleteAffairCallback = (_id: any) => { // need to fix any
+    const deleteAffairCallback = (_id: number) => { // need to fix any  ВЫПОЛНЕНО
         // need to fix
     }
 
