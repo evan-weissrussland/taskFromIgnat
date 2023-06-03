@@ -36,7 +36,6 @@ const defaultAffairs: AffairType[] = [ // need to fix any              ВЫПО�
 
 // pure helper functions
 export const filterAffairs = (affairs: AffairType[], filter: FilterType): AffairType[] => { // need to fix any
-                                                                    // НЕПОНЯТНО, как ТИПИЗИРОВАТЬ any
     if (filter === "all") {
         return affairs
     } else {
