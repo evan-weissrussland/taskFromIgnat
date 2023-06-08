@@ -1,39 +1,48 @@
 .greetingForm {
+    position: relative;
 }
 
 .inputAndButtonContainer {
-    border:3px solid green;
-    display:flex;
+    /*border:3px solid green;*/
+    display: flex;
     width: 500px;
 }
 
 .error {
     color: red;
+    font: 13px/1 sans-serif;
+    position: relative;
+    z-index: 2;
+    background: white;
+    padding-bottom: 5px;
 }
 
 .input {
     border: none;
-    outline: 1px solid gray;
+    outline: 1px solid rgba(128, 128, 128, 0.5);
     border-radius: 3px;
-    width: 100%;
+    min-width: 250px;
     padding: 5px 5px;
     font-size: 14px;
+    margin-bottom: 7px;
 }
 
 .input:focus {
+    min-width: 250px;
     border: none;
-    outline: 1px solid gray;
+    outline: 1px solid rgba(128, 128, 128, 0.5);
     border-radius: 3px;
-    width: 100%;
     padding: 5px 5px;
+    margin-bottom: 7px;
 }
 
 .errorInput {
+    min-width: 250px;
     border: none;
-    outline: 1px solid red;
+    outline: 1px solid rgba(255, 0, 0, 0.5);
     border-radius: 3px;
-    width: 100%;
     padding: 5px 5px;
+    margin-bottom: 7px;
 }
 
 .button {
@@ -45,25 +54,35 @@
     border-radius: 3px;
     border: none;
     font-size: 14px;
-    outline:1px solid rgba(0, 13, 255, 0.94);
+    /*outline:1px solid rgba(0, 13, 255, 0.94);*/
+}
+
+.button::first-letter {
+    text-transform: uppercase;
 }
 
 .button:focus {
     background: rgba(34, 255, 0, 0.94);
-    outline:1px solid rgba(34, 255, 0, 0.94);
+    outline: 1px solid rgba(34, 255, 0, 0.94);
 }
 
 .button:active {
 }
 
 .button:disabled {
-background: rgba(0, 140, 255, 0.67);
-    outline:1px solid rgba(0, 140, 255, 0.67);
+    background: rgba(0, 140, 255, 0.67);
+    outline: 1px solid rgba(0, 140, 255, 0.67);
 }
 
 .text {
-
+    font: 13px/1 sans-serif;
+    color: gray;
+    margin-bottom: 10px;
 }
 
 .greeting {
+    font:bold 13px/1 sans-serif;
+    position: absolute;
+    top: 60px;
+    z-index: 1;
 }

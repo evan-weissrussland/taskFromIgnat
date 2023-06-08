@@ -23,7 +23,7 @@ export const pureOnBlur = (name: string, setError: (v:string)=>void) => { // е�
     }
 }
 
-export const pureOnEnter = (e:{key:string}, addUser: ()=>void) => { // если нажата кнопка Enter - добавить                                         ------ВЫПОЛНЕНО
+export const pureOnEnter = (e:{key:string}, addUser: ()=>void) => { // если нажата кнопка Enter - добавить                                ------ВЫПОЛНЕН
     if (e.key === 'Enter') {
         addUser()
     }
@@ -56,6 +56,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
 
     const onEnter = (e: KeyboardEvent<HTMLInputElement>) => {
         pureOnEnter(e, addUser)
+
     }
 
     const totalUsers = users.length // 0   need to fix   -----ВЫПОЛНЕНО
