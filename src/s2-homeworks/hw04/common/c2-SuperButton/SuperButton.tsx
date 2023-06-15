@@ -8,7 +8,6 @@ type DefaultButtonPropsType = DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonE
 type SuperButtonPropsType = DefaultButtonPropsType & {
     xType?: string
 }
-
 const SuperButton: React.FC<SuperButtonPropsType> = (
     {
         xType,
@@ -22,6 +21,7 @@ const SuperButton: React.FC<SuperButtonPropsType> = (
         //         ? ...
         //         : xType === 'red'
         //             ? ...
+        + (restProps.children==='default' ? ` ${s.default}` : restProps.children==='secondary' ? ' ' +  s.secondary : restProps.children==='red' ? ` ${s.red}` : restProps.children==='disabled' ? ` ${s.disabled}` : false)
         + (className ? ' ' + className : '') // задачка на смешивание классов
 
     return (
