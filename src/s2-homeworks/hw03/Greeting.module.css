@@ -11,10 +11,11 @@
 .error {
     color: red;
     font: 13px/1 sans-serif;
-    position: relative;
+    position: absolute;
     z-index: 2;
     background: white;
     padding-bottom: 5px;
+    top: 57px;
 }
 
 .input {
