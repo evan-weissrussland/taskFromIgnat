@@ -2,22 +2,18 @@
     /*border: 2px solid orange;*/
     display: flex;
     align-items: center;
-    height: 34px;
+    height: 34px; /*такова высота инпута. Если убрать,то при вызове инпута будет смещаться вниз контент с кнопками*/
 }
 
 .span {
-color: #227bf1;
+    color: #227bf1;
     font-family: sans-serif;
 }
 
 .input {
-    width: 100%;
-    outline: none;
-    border: 2px solid rgba(153, 147, 147, 0.32);
-    border-radius: 5px;
-    padding: 7px;
+    padding-left: 15px; /*чтобы при фокусе смещался курсор на некоторое расстояние вправо. Если задать padding-left в листе суперИнпута для input:focus, то это повлияет вообще на все инпуты*/
 }
 
 .pen {
-margin-right: 10px;
+    margin-right: 10px;
 }
