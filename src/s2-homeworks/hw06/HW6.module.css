@@ -1,5 +1,5 @@
 .buttonsContainer {
-    border: 2px solid red;
+    /*border: 2px solid red;*/
     margin-bottom: 200px;
     width: 230px;
     display: flex;
@@ -14,10 +14,17 @@
 
 .buttonsave {
     width: 87px;
-    height: 32px;
 }
 
 .buttonrestore {
     width: 96px;
-    height: 32px;
+}
+
+.buttonsave:hover {
+    width: 87px;
+}
+
+.buttonrestore:active {
+    background: white;
+    width: 96px;
 }
