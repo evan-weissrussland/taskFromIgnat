@@ -1,5 +1,11 @@
 .buttonsContainer {
+    /*border: 2px solid red;*/
+    margin-bottom: 200px;
+    width: 200px;
 }
 
 .editableSpanContainer {
+    /*border: 2px solid green;*/
+    width: 200px;
+    margin-bottom: 20px;
 }

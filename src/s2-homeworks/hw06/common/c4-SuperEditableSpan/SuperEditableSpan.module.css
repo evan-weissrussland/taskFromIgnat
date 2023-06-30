@@ -1,11 +1,23 @@
 .spanBlock {
+    /*border: 2px solid orange;*/
+    display: flex;
+    align-items: center;
+    height: 34px;
 }
 
 .span {
+color: #227bf1;
+    font-family: sans-serif;
 }
 
 .input {
+    width: 100%;
+    outline: none;
+    border: 2px solid rgba(153, 147, 147, 0.32);
+    border-radius: 5px;
+    padding: 7px;
 }
 
 .pen {
+margin-right: 10px;
 }
