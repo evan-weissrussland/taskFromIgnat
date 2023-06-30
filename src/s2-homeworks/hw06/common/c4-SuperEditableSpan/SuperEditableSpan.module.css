@@ -8,6 +8,7 @@
 .span {
     color: #227bf1;
     font-family: sans-serif;
+    cursor:default;
 }
 
 .input {
@@ -15,5 +16,5 @@
 }
 
 .pen {
-    margin-right: 10px;
+    margin-right: 20px;
 }
