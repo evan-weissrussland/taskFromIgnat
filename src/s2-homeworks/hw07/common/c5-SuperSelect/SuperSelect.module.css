@@ -1,9 +1,13 @@
 .select {
+    margin-right: 70px;
 }
 
 .select:focus {
+
 }
 
 
 .option:hover {
+    background: rgba(173, 255, 47, 0.42);
+    color:red;
 }
