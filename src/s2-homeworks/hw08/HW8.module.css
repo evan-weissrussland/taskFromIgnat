@@ -1,11 +1,13 @@
 .item {
+    border-bottom: 1px solid rgba(169, 169, 169, 0.63);
 }
 
 .item:last-of-type {
+    border-bottom: none;
 }
 
 .users {
-
+border-collapse: collapse;
     border: 2px solid black;
 }
 
@@ -18,7 +20,7 @@
 }
 
 .container {
-
+border-radius: ;
     border: 3px solid orange;
     display: flex;
     flex-direction: column;
@@ -26,10 +28,14 @@
 }
 
 .thead {
+    background: rgba(169, 169, 169, 0.63);
 }
 
 .nameCol {
+    padding: 5px 15px;
+    width: 50%;
 }
 
 .ageCol {
+    font-weight:bold;
 }
