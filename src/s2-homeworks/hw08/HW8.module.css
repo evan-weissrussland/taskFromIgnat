@@ -1,5 +1,6 @@
 .item {
     border-bottom: 1px solid rgba(169, 169, 169, 0.63);
+    height: 50px;
 }
 
 .item:last-of-type {
@@ -7,35 +8,38 @@
 }
 
 .users {
-border-collapse: collapse;
-    border: 2px solid black;
+    border-collapse: collapse;
+    /*border: 2px solid black;*/
 }
 
 .buttonsContainer {
-    display:flex;
+    display: flex;
     gap: 10px;
-    border: 2px solid red;
+    /*border: 2px solid red;*/
     width: 55%;
     align-self: flex-end;
 }
 
 .container {
-border-radius: ;
-    border: 3px solid orange;
+    /*border: 3px solid orange;*/
     display: flex;
     flex-direction: column;
+    gap: 20px;
     width: 50%;
 }
 
 .thead {
+    font-weight: bold;
     background: rgba(169, 169, 169, 0.63);
+    height: 35px;
 }
 
 .nameCol {
-    padding: 5px 15px;
+    border-radius: 2px 0 0 0;
+    padding-left: 15px;
     width: 50%;
 }
 
 .ageCol {
-    font-weight:bold;
+    border-radius: 0 2px 0 0;
 }
