@@ -21,8 +21,9 @@
     display: flex;
     gap: 10px;
     /*border: 2px solid red;*/
-    width: 55%;
+    width: 60%;
     align-self: flex-end;
+    justify-content: flex-end;
 }
 
 .container {
@@ -48,4 +49,17 @@
 .ageCol {
     border-radius: 0 2px 0 0;
     font-weight: bold;
+}
+
+.button {
+width: 100%;
+    font-weight: bold;
+}
+
+.button:hover {
+    width: 100%;
+}
+
+.button:active {
+    width: 100%;
 }
