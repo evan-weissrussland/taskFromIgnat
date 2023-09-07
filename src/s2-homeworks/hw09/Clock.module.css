@@ -1,14 +1,38 @@
 .buttonsContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttonstart {
+    width: 45%;
+    color: white;
+}
+
+.buttonstop {
+    width: 45%;
+    color: white;
+}
+
+.buttonstart:hover, .buttonstop:hover {
+    width: 45%;
 }
 
 .clock {
+    width: 200px;
 }
 
 .watch {
+    font-size: 20px;
+    margin-bottom: 5px;
+    cursor: default;
+    display: inline-block;
 }
 
 .watch strong {
+    font-family: sans-serif;
 }
 
 .more {
+    font-size: 14px;
+    margin-bottom: 20px;
 }
