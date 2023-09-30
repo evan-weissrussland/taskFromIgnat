@@ -1,8 +1,68 @@
 .container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    /*border: 2px solid orange;*/
 }
 
 .wrapper {
+    display: flex;
+    align-items: center;
+    /*border: 3px solid black;*/
 }
 
 .number {
+    display: inline-flex;
+    /*border: 1px solid blue;*/
+    width: 30px;
+    font-weight: 600;
+}
+
+.range1, .range2{
+    margin-right: 22px;
+    /*border: 1px solid red;*/
+}
+.range1 span:last-child {
+    width: 18px;
+    height: 18px;
+    border: 1px solid #00cc22;
+    background-color: white;
+}
+
+.range1 span:last-child::after {
+    width: 6px;
+    height: 6px;
+    display: inline-block;
+    background-color: #01cb22;
+}
+
+.range1 span:not(:last-child) {
+    height: 4px;
+    background-color: #00cc22;
+    border: none;
+}
+
+.range1 span:first-child, .range2 span:first-child {
+    height: 4px;
+    background-color: #8b8b8b;
+}
+
+.range2 span[data-index] {
+    width: 18px;
+    height: 18px;
+    border: 1px solid #00cc22;
+    background-color: white;
+}
+
+.range2 span[data-index]::after {
+    width: 6px;
+    height: 6px;
+    display: inline-block;
+    background-color: #01cb22;
+}
+
+.range2 span:nth-child(2) {
+    height: 4px;
+    background-color: #00cc22;
+    border: none;
 }
