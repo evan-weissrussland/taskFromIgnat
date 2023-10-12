@@ -1,22 +1,53 @@
 .buttonsContainer {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.button {
+    width: inherit;    margin-right: 24px;
+}
+
+.button:active {
+    width: inherit;
 }
 
 .responseContainer {
+    display: flex;
+    /*border: 1px solid red;*/
+    min-height: 320px;
+    justify-content: center;
 }
 
 .imageContainer {
+    width: 451px;
+    margin-right: 50px;
+    /*border: 3px solid hotpink;*/
+    display: flex;
+    align-items: center;
 }
 
 .image {
 }
 
-.textContainer{
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*border: 2px solid blue;*/
+    width: 650px;
 }
 
 .code {
+    /*border: 2px solid black;*/
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: 30px;
 }
 
 .text {
+    /*border: 2px solid orange;*/
 }
+
 .info {
+    /*border: 2px solid lawngreen;*/
 }
