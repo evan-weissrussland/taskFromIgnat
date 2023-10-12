@@ -37,8 +37,8 @@ const HW13 = () => {
                 setCode('Код 200!')
                 setImage(success200)
                 // дописать
-                setInfo('...всё ОК)')
-                setText('код 200 - обычно означает что скорее всего всё ок')
+                setInfo(res.data.info)
+                setText(res.data.errorText)
             })
             .catch((e) => {
                 // дописать
