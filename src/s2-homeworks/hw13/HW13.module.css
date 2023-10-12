@@ -1,29 +1,39 @@
 .buttonsContainer {
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 34px;
 }
 
 .button {
-    width: inherit;    margin-right: 24px;
+    width: inherit;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-right: 24px;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 .button:active {
     width: inherit;
+}
+.button:disabled {
+    border: 1px solid rgba(0, 0, 255, 0.55);
 }
 
 .responseContainer {
     display: flex;
     /*border: 1px solid red;*/
     min-height: 320px;
-    justify-content: center;
+    padding-left: 96px;
 }
 
 .imageContainer {
     width: 451px;
-    margin-right: 50px;
+    margin-right: 94px;
     /*border: 3px solid hotpink;*/
     display: flex;
     align-items: center;
+    flex-shrink: 0;
+    justify-content: end;
 }
 
 .image {
@@ -40,14 +50,14 @@
 .code {
     /*border: 2px solid black;*/
     font-weight: bold;
-    font-size: 35px;
-    margin-bottom: 30px;
+    font-size: 30px;
+    margin-bottom: 12px;
 }
 
 .text {
-    /*border: 2px solid orange;*/
+    font-size: 16px;
 }
 
 .info {
-    /*border: 2px solid lawngreen;*/
+    font-size: 16px;
 }
