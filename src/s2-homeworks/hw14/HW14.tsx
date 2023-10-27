@@ -34,8 +34,11 @@ const HW14 = () => {
         setLoading(true)
         getTechs(value)
             .then((res) => {
+                if (res) {
+                    setTechs(res.data.techs)
+                }
                 // делает студент
-
+                setLoading(false)
                 // сохранить пришедшие данные
 
                 //
@@ -47,7 +50,7 @@ const HW14 = () => {
         // делает студент
 
         // добавить/заменить значение в квери урла
-        // setSearchParams(
+        setSearchParams({value})
 
         //
     }
@@ -74,6 +77,7 @@ const HW14 = () => {
                     value={find}
                     onChangeText={onChangeText}
                     onDebouncedChange={sendQuery}
+                    className={s.superDebouncer}
                 />
 
                 <div id={'hw14-loading'} className={s.loading}>
