@@ -3,5 +3,13 @@
 }
 
 .loading {
+    width: 400px;
+    text-align: right;
+}
 
+.superDebouncer {
+    width: 400px;
+}
+.superDebouncer:focus {
+    border-color: blue;
 }
