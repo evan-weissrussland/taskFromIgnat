@@ -1,12 +1,15 @@
 import React from 'react'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faAngleDown} from "@fortawesome/free-solid-svg-icons/faAngleDown";
+import {faSortUp} from "@fortawesome/free-solid-svg-icons/faSortUp";
+import {faSortDown} from "@fortawesome/free-solid-svg-icons/faSortDown";
 
 // добавить в проект иконки и импортировать
-const downIcon = <FontAwesomeIcon icon={faAngleDown}/>
-const upIcon = '[/\\]'
-const noneIcon = '[--]'
-
+const downIcon = <FontAwesomeIcon icon={faSortDown} />
+const upIcon = <FontAwesomeIcon icon={faSortUp} />
+const noneIcon = <>
+    <FontAwesomeIcon icon={faSortUp} style={{"opacity": "0.2",}}/>
+    <FontAwesomeIcon icon={faSortDown} style={{"opacity": "0.2", 'marginLeft':'-10px'}}/>
+</>
 export type SuperSortPropsType = {
     id?: string
     sort: string
@@ -16,9 +19,15 @@ export type SuperSortPropsType = {
 
 export const pureChange = (sort: string, down: string, up: string) => {
     // пишет студент, sort: (click) => down (click) => up (click) => '' (click) => down ...
-    if (sort === '') {return down}
-    if (sort === down) {return up}
-    if (sort === up) {return ''}
+    if (sort === '') {
+        return down
+    }
+    if (sort === down) {
+        return up
+    }
+    if (sort === up) {
+        return ''
+    }
     return down
 }
 
@@ -44,13 +53,13 @@ const SuperSort: React.FC<SuperSortPropsType> = (
         <span
             id={id + '-sort-' + value}
             onClick={onChangeCallback}
+            style={{'marginLeft':'5px',}}
         >
             {/*сделать иконку*/}
             {/*<img*/}
             {/*    id={id + '-icon-' + sort}*/}
-            {/*    src={icon}*/}
+            {/*    src={}*/}
             {/*/>*/}
-
             {icon} {/*а это убрать*/}
         </span>
     )
