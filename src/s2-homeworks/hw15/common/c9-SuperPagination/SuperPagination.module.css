@@ -10,3 +10,19 @@
 .text2 {
 
 }
+
+.pagianationMUI button, .pagianationMUI span{
+    min-width: 24px;
+    height: 24px;
+    border-radius: 2px;
+    /*display: inline-block;*/
+}
+
+.pagianationMUI button[class*='Mui-selected']{
+    background: #0066CC;
+    color: white;
+}
+
+.pagianationMUI button[class*='Mui-selected']:hover{
+    background: #0066CC;
+}
