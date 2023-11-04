@@ -4,18 +4,35 @@
 }
 
 .text1 {
-
+font: 14px Roboto;
+    /*border: 2px solid red;*/
+    display: inline-flex;
+    height: 25px;
+    align-items: center;
+    margin-right: 11px;
 }
 
 .text2 {
-
+    font: 14px Roboto;
+    /*border: 2px solid red;*/
+    display: inline-flex;
+    height: 25px;
+    align-items: center;
 }
 
-.pagianationMUI button, .pagianationMUI span{
+.superSelect {
+    margin-right: 6px;
+    border: 1px solid #ECEBEB;
+    outline: none;
+}
+
+.pagianationMUI button{
     min-width: 24px;
     height: 24px;
     border-radius: 2px;
     /*display: inline-block;*/
+    margin: 0 17px 0 0;
+    font: 14px Roboto;
 }
 
 .pagianationMUI button[class*='Mui-selected']{
