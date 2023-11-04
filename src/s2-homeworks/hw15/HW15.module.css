@@ -1,16 +1,25 @@
 
 .tech {
-    width: 50vw;
+    flex: 1 1 50%;
+    padding-left: 17px;
+    /*border: 2px solid red ;*/
+    font: 16px Roboto;
+    display: flex;
+    align-items: center;
+
 }
 
 .developer {
-
+    flex: 1 1 50%;
+    font: 16px Roboto;
+    display: flex;
+    align-items: center;
 }
 
 .techHeader {
     display: flex;
     /*width: 50vw;*/
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
     flex: 1 1 50%;
     background: #E5E5E5;
     height: 36px;
@@ -22,7 +31,7 @@
 
 .developerHeader {
     display: flex;
-    border: 1px solid lawngreen;
+    /*border: 1px solid lawngreen;*/
     flex: 1 1 50%;
     background: #E5E5E5;
     height: 36px;
@@ -34,14 +43,29 @@
 .row {
     display: flex;
     width: 606px;
+    /*border: 1px solid lawngreen;*/
+    height: 48px;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.row:last-child {
+    border-bottom: none;
 }
 
 .rowHeader {
     display: flex;
     width: 606px;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 
 .loading {
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    /*border: 2px solid red;*/
+    width: 606px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.79);
+    z-index: 1
 }
