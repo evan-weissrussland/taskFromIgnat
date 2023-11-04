@@ -1,7 +1,9 @@
 import React from 'react'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faAngleDown} from "@fortawesome/free-solid-svg-icons/faAngleDown";
 
 // добавить в проект иконки и импортировать
-const downIcon = '[\\/]'
+const downIcon = <FontAwesomeIcon icon={faAngleDown}/>
 const upIcon = '[/\\]'
 const noneIcon = '[--]'
 
@@ -17,7 +19,7 @@ export const pureChange = (sort: string, down: string, up: string) => {
     if (sort === '') {return down}
     if (sort === down) {return up}
     if (sort === up) {return ''}
-    return ''
+    return down
 }
 
 const SuperSort: React.FC<SuperSortPropsType> = (
