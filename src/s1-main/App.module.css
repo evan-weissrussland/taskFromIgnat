@@ -4,19 +4,19 @@
 
 .hw {
     margin-bottom: 40px;
-
+    position: relative;
     padding-bottom: 30px;
     padding-left: 50px;
     padding-right: 50px;
-    border-bottom:1px solid rgba(128, 128, 128, 0.5);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
 
 
 }
 
 .hwTitle {
-    font:bold 20px/1 sans-serif ;
+    font: bold 20px/1 sans-serif;
     letter-spacing: 1px;
-    border-bottom:1px solid rgba(128, 128, 128, 0.5);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
     margin-bottom: 20px;
     padding-bottom: 8px;
     padding-left: 50px;
