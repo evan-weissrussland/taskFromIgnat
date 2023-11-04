@@ -42,6 +42,7 @@ const SuperPagination: React.FC<SuperPaginationPropsType> = (
                 onChange={onChangeCallback}
                 hideNextButton
                 hidePrevButton
+                className={s.pagianationMUI}
             />
 
             <span className={s.text1}>
